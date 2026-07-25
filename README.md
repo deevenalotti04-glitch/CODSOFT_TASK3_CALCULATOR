@@ -77,13 +77,12 @@ No additional software or libraries are required.
 
 ## 📸 Preview
 
-Add a screenshot of your calculator here after completing the project.
 
-Example:
 
-```
+
+
 calculator-preview.png
-```
+
 
 ## 📈 Future Improvements
 
