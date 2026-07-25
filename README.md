@@ -79,9 +79,8 @@ No additional software or libraries are required.
 
 
 
-
-
 calculator-preview.png
+
 
 
 ## 📈 Future Improvements
