@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#050505;
+    overflow:hidden;
+    color:white;
+
+}
+
+.background{
+
+    position:fixed;
+    inset:0;
+
+    background:
+    radial-gradient(circle at top left,#4d00ff44,transparent 40%),
+    radial-gradient(circle at bottom right,#00bfff33,transparent 40%),
+    #050505;
+
+    z-index:-1;
+
+}
+
+.calculator{
+
+    width:370px;
+    max-width:95%;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+
+    0 0 20px rgba(0,191,255,.25),
+    0 0 40px rgba(128,0,255,.18);
+
+}
+
+.display-container{
+
+    margin-bottom:20px;
+
+}
+
+.history{
+
+    text-align:right;
+    color:#9ea5b3;
+    min-height:25px;
+    font-size:15px;
+    margin-bottom:8px;
+
+}
+
+#display{
+
+    width:100%;
+    height:70px;
+
+    border:none;
+    outline:none;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    color:#fff;
+
+    font-size:34px;
+
+    text-align:right;
+
+    padding:15px;
+
+    box-shadow:inset 0 0 10px rgba(255,255,255,.05);
+
+}
+
+.buttons{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:14px;
+
+}
+
+button{
+
+    height:65px;
+
+    border:none;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:22px;
+
+    background:linear-gradient(135deg,#242424,#3a3a3a);
+
+    transition:.25s;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.35);
+
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 0 15px #00c3ff,
+    0 0 25px #7b2cff;
+
+}
+
+button:active{
+
+    transform:scale(.95);
+
+}
+
+.operator{
+
+    background:linear-gradient(135deg,#6a00ff,#00bfff);
+
+}
+
+.equal{
+
+    background:linear-gradient(135deg,#00c6ff,#8b5cf6);
+
+}
+
+.action{
+
+    background:linear-gradient(135deg,#ff4b4b,#ff7b00);
+
+}
+
+.zero{
+
+    grid-column:span 2;
+
+}
+
+@media(max-width:500px){
+
+.calculator{
+
+width:100%;
+margin:20px;
+
+}
+
+button{
+
+height:60px;
+font-size:20px;
+
+}
+
+#display{
+
+font-size:28px;
+
+}
+
+}
