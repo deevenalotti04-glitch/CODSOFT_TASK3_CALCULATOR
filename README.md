@@ -78,8 +78,8 @@ No additional software or libraries are required.
 ## 📸 Preview
 
 
+<img width="1422" height="816" alt="calculator-preview" src="https://github.com/user-attachments/assets/cbac41fc-9440-4bcd-b53f-ab1fba78e8dc" />
 
-calculator-preview.png
 
 
 
